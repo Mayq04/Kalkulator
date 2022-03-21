@@ -23,28 +23,75 @@
     </div>
   </nav>
 
-  <div class="contaner-fluid banner">
-    <div class="container text-center pt-5 pb-5">
-      <h1>OPERASI MATEMATIKA</h1>
+  <div class="kalkulator">
+    <div>
+      <h1 class="judul">OPERASI MATEMATIKA</h1>
       <form method="post" action="/Kalkulator/hasil">
-        <input name="number1" type="text" class="form-control" style="width: 150px; display: inline " />
-        <select name="operation">
+        <input name="number1" type="text" class="bil">
+        <select name="operation" class="opt">
+          <option value="" class="bil">Pilih Operasi</option>
           <option value="+">+</option>
           <option value="-">-</option>
           <option value="*">*</option>
           <option value="/">/</option>
         </select>
-        <input name="number2" type="text" class="form-control" style="width: 150px; display: inline" />
-        <input name="submit" type="submit" value="Hasil" class="btn btn-primary" />
+        <input name="number2" type="text" class="bil"><br>
+        <input name="submit" type="submit" value="Hasil" class="tombol">
       </form>
     </div>
   </div>
-
-
-
-
-
-
 </body>
+<style type="text/css">
+  body{
+    background: #f2f2f2;
+    font-family: calibri;
+  }
 
+  .kalkulator{
+    width: 335px;
+    background: #2f495a;
+    margin: 100px auto;
+    padding: 10px 20px 50px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px 0px #d1d1d1;
+  }
+
+  .bil{
+    font-size: 16pt;
+    border: none;
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .opt{
+    font-size: 16pt;
+    border: none;
+    width: auto;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    float: right
+  }
+
+  .tombol{
+    background: #ec5159;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #eee;
+    border-bottom: 4px solid #bf3d3d;
+    float: right;
+  }
+
+  .judul{
+    font-family: calibri;
+    text-align: center;
+    color: #d1d1d1;
+    font-weight: normal;
+  }
+</style>
 </html>
